@@ -1,1 +1,1 @@
-###Daily StandUp Check in###
+### Daily StandUp Check in
