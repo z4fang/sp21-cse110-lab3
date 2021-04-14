@@ -1,7 +1,7 @@
 ### Daily StandUp Check in
 
-**What did I work on yesterday?
+**What did I work on yesterday?**
 
-**What am I working on today?
+**What am I working on today?**
 
-**What issues are blocking me?
+**What issues are blocking me?**
