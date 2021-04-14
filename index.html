@@ -1,15 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="icon" href="Day1.jpg" type="jpg" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+       <style>
+           /* This is a comment */
+           *{
+               text-align: left;
+           }
+
+           #bgcolor
+           {
+               background-color:blanchedalmond;
+           }
+
+           h1{
+               font-family: "Sofia", sans-serif;
+           }
+
+           body
+           {
+               
+               width: max-width;
+               background-color:rgb(196, 255, 211);
+           }
+
+            @media screen and (min-width: 600px) {
+            body {
+                    background-color:bisque;
+                }
+
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                padding: 10px;
+                background-color: aqua;
+            }
+
+            .grid-children{
+                background-color: aquamarine;
+                border: salmon solid;
+                padding: 10px;
+                font-size: 20px;
+                text-align: center;
+            }
+           .container
+           {
+               flex-direction: row | row-reverse | column | column-reverse;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: rgb(43, 214, 226);
+           }
+
+           .container > div{
+                
+                background-color: DodgerBlue;
+                color: white;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+           }
+
+           a:hover {
+             color: hotpink;
+            }
+
+            a:active {
+             color: blue;
+            }
+
+            a[target=_blank]{
+                background-color: yellow;
+            }
+            
+            details:hover
+            {
+                color: blueviolet;
+            }
+
+           audio
+           {
+               bottom: 1px ;
+               right: 0;
+               border-style:outset;
+               border-radius: 30px;
+               border-color: aqua;
+               position: fixed;
+               width: 400px;
+           }
+
+           li.hidden
+           {
+               display: none;
+           }
+
+           h1
+           {
+               position: relative;
+               width: auto;
+               height: auto;
+               display: block;
+           }
+
+           li.relative
+           {
+               position: relative;
+           }
+       </style>
+
+    <link rel="icon" href="Day1.jpg" type="jpg" sizes="16x16">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ken's Journal</title>
 </head>
 <body>
+    
     <header>
-        <div><h1>Three Days Journal</h1></div>
+        <style>
+        /* hehee */
+            h1.dotted {
+             margin: auto;
+            width: 430px;
+            border-radius: 0%;
+            border-width: 5px;
+            border-color: black;
+            border-style: dotted;
+            }
+
+            h1{
+                font-size: 50px;
+                line-height: 2ex;
+            }
+        </style>
+        <div><h1 class="dotted" style="color: gray;">Three Days Journal</h1></div>
         <audio controls>
         <source src="SpiderMan.mp3" type="audio/mpeg">
          Your browser does not support the audio element.
@@ -21,12 +146,28 @@
 
     <main>
         <hr>
-        <h2 id="Day1">Two days ago...</h2>
+        <style>
+            h2{
+                font-family: "Trirong", serif;
+                font-size: 35px;
+                line-height: 1em;
+                text-decoration: underline;
+                text-align: left;
+            }
+
+            p
+            {
+                font-size: 20px;
+                line-height: 2em;
+                text-transform: uppercase;
+            }
+        </style>
+        <h2 id="Day1" class="container">Two days ago...</h2>
         Two days ago was <span><b>Monday</b></span>! 
         <nav>
             <h4><b>Hightlight</b></h4>
             <ul>
-            <li>Cooked some Spaghetti with Alfredo Sauce!</li>
+            <li.relative>Cooked some Spaghetti with Alfredo Sauce!</li>
             <li>Played some Wild Rift (Mobile Game) <div></div><img src="https://cdn-wp.thesportsrush.com/2020/09/wild-rift.jpg" alt="" width="200" height="100"></li>
             <li>Attended Asian American Christian Fellowship Large group</li>
             
@@ -49,6 +190,8 @@
 
             </ol>
         </nav>
+                <li class="hidden">Hi! I loves to play League!</li>
+                <p id="bgcolor">YO YO YO!</p>
         <hr>
         <h2><i>Today. . .</i></h2>
         <nav>
@@ -59,12 +202,39 @@
             
                 
         </nav>
+        <div class="container">
+        <div>H</div>
+        <div>e</div>
+        <div>l</div> 
+        <div>l</div>
+        <div>o</div>
+        <div></div>
+        <div>W</div>
+        <div>h</div>
+        <div>a</div>
+        <div>t</div>
+        <div>'</div>
+        <div>s</div><div>u</div><div>p</div><div>.</div><div>Enjoy!</div>
+        </div>
+        <p></p>
+        <div class="grid-container">
+            <div class="grid-children">X</div>
+            <div class="grid-children">O</div>
+            <div class="grid-children">O</div>
+            <div class="grid-children">O</div>
+            <div class="grid-children">X</div>
+            <div class="grid-children">O</div>
+            <div class="grid-children">O</div>
+            <div class="grid-children">X</div>
+            <div class="grid-children">X</div>
+        </div>
+        
         <video width="500" height="500" controls loop>
             <source src="Day3.mp4">
         </video>
     </main>
 
-    <footer>
+    <footer style="background-color:cornsilk">
         <h5>Subscribe</h5>
 
         <form onsubmit="alert('Subscribed')">
@@ -72,7 +242,7 @@
             <button>Submit</button>
         </form>
         <br>
-        follow my IG: <a href="https://www.instagram.com/ken__fang/">Ken_Fang</a>
+        follow my IG: <a href="https://www.instagram.com/ken__fang/" target="_blank">Ken_Fang</a>
 
     </footer>
 
